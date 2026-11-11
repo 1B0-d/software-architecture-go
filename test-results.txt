@@ -1,0 +1,25 @@
+Historical output; former module identifier redacted.
+?   	example.local/[redacted]-architecture-demo/cmd/catalog	[no test files]
+?   	example.local/[redacted]-architecture-demo/cmd/reviews	[no test files]
+=== RUN   TestHTMLViewEscapesVehicleNames
+2026/11/10 01:41:34 GET / 572.8µs
+--- PASS: TestHTMLViewEscapesVehicleNames (0.05s)
+PASS
+ok  	example.local/[redacted]-architecture-demo/internal/catalog	0.702s
+=== RUN   TestServicesPersistAndCommunicate
+2026/11/10 01:41:34 POST /vehicles 9.7475ms
+2026/11/10 01:41:34 GET /vehicles/1 548.7µs
+2026/11/10 01:41:34 POST /reviews 5.1631ms
+2026/11/10 01:41:34 GET /vehicles/9999 564.7µs
+2026/11/10 01:41:34 POST /reviews 1.6534ms
+2026/11/10 01:41:34 GET /reviews 0s
+--- PASS: TestServicesPersistAndCommunicate (0.08s)
+=== RUN   TestInvalidInputAndCatalogFailure
+2026/11/10 01:41:34 POST /reviews 0s
+2026/11/10 01:41:34 POST /reviews 564.8µs
+2026/11/10 01:41:34 POST /reviews 0s
+--- PASS: TestInvalidInputAndCatalogFailure (0.01s)
+PASS
+ok  	example.local/[redacted]-architecture-demo/internal/integration	0.763s
+?   	example.local/[redacted]-architecture-demo/internal/reviews	[no test files]
+?   	example.local/[redacted]-architecture-demo/internal/shared	[no test files]
